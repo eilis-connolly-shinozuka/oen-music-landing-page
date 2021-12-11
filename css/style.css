@@ -1,0 +1,79 @@
+/* Importing Google fonts */
+@import url("https://fonts.googleapis.com/css?family=Lora|Roboto");
+
+/* Importing component files */
+@import url("components/avatar.css");
+@import url("components/banner.css");
+@import url("components/button.css");
+@import url("components/card.css");
+@import url("components/container.css");
+
+/* General style rules for fonts and colors */
+body {
+  font-family: 'Lora', serif;
+  font-size: 18px;
+  margin: 0px;
+}
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0px ;
+}
+
+.list-inline li {
+  display: inline;
+  padding: 10px;
+}
+
+.list-inline i {
+  font-size: 50px;
+  color: rgb(200,200,200);
+}
+
+.list-inline i:hover {
+  font-size: 50px;
+  color: black;
+}
+
+.image-albumcover {
+  width: 200px;
+  border-radius: 5px;
+}
+
+.image-hover{
+  position: relative;
+  width: 100px;
+}
+
+.image-preview {
+  width: 100%;
+  border-radius: 5px;
+  display : block; 
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background : rgba(0,0,0,0.6);
+  color: white;
+  font-size: 50px;
+  display: flex ;
+  flex-direction: column;
+  align items : center ;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
